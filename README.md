@@ -51,8 +51,8 @@ A seguir, uma visão geral das seções do curso para construção do clone do O
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/omegle-clone.git
-   cd omegle-clone
+   git clone https://github.com/ruip005/WebRCT.git
+   cd WebRCT
    ```
 
 2. Instale as dependências:
