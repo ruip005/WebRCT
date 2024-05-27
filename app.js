@@ -14,14 +14,14 @@ app.get('/', (req, res) => {
 });
 
 let conexoes = [];
-io.on('connection', (socket) => {
+io.on('connection', (socket) => { // Evento para quando um utilizador se conecta ao socket [io é o servidor socket.io]
     console.log(`Utilizador conectado ao socket com o id ${socket.id}`);
     conexoes.push(socket.id);
     console.log(`Número de utilizadores conectados: ${conexoes.length}`);
 
-    socket.on('disconnect', () => {
+    socket.on('disconnect', () => { // Evento para quando um utilizador se desconecta do socket [socket. seria o parametro do evento]
         console.log(`Utilizador desconectado do socket com o id ${socket.id}`);
-        conexoes = conexoes.filter((id) => id !== socket.id);
+        conexoes = conexoes.filter((id) => id !== socket.id); // Filtrar o array de conexões para remover o id do utilizador que se desconectou
         console.log(`Número de utilizadores conectados: ${conexoes.length}`);
     });
 });
