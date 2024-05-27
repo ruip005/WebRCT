@@ -1,0 +1,22 @@
+{
+  "name": "webrct",
+  "version": "1.0.0",
+  "description": "Repo criado para praticar WebRTC e Socket.io",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rui Rodrigues",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "http": "^0.0.1-security",
+    "nodemon": "^3.1.1",
+    "socket.io": "^4.7.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruip005/webrct_socket.git"
+  }
+}
